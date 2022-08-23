@@ -9,14 +9,66 @@ body{
     width: 90%;
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    margin: 40px auto;
 }
 .choseImg{
     width: 20%;
     border: 2px gold solid;
 }
 .choseImg:hover{
-    position: sticky;
     transition: 0.5s;
     scale: 1.1;
     cursor: pointer;
+}
+
+.difficultWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: 40px auto;
+    justify-content: center;
+    align-items: space-around;
+}
+.difficultSelector{
+    margin: 10px;
+    font-size: 20px;
+    text-align: center;
+    width: 130px;
+    height: 30px;
+    border: 2px gold solid;
+    background-color: rgba(105, 42, 42, 0.274);
+    color: rgb(172, 172, 44);
+}
+.difficultSelector:hover{
+    transition: 0.5s;
+    scale: 1.1;
+    cursor: pointer;
+}
+.active{
+    scale: 1.1;
+    border: 2px red solid;
+}
+.deckSectionWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.deckCreateButton{
+    text-align: center;
+    width: 160px;
+    height: 60px;
+    font-size: 25px;
+    border: 2px gold solid;
+    background-color: rgba(105, 42, 42, 0.274);
+    color: rgb(172, 172, 44);
+}
+.deckCreateButton:hover{
+    transition: 0.5s;
+    scale: 1.1;
+    cursor: pointer;
+}
+.deckCreateButton:active{
+    transition: 0s;
+    border: 2px red solid;
 }
