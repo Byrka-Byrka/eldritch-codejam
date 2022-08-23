@@ -1,0 +1,22 @@
+body{
+    background-image: url(./assets/home.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+}
+.choseAncientWrapper{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+.choseImg{
+    width: 20%;
+    border: 2px gold solid;
+}
+.choseImg:hover{
+    position: sticky;
+    transition: 0.5s;
+    scale: 1.1;
+    cursor: pointer;
+}
