@@ -35,7 +35,7 @@ body{
     margin: 10px;
     font-size: 20px;
     text-align: center;
-    width: 130px;
+    min-width: 130px;
     height: 30px;
     border: 2px gold solid;
     background-color: rgba(105, 42, 42, 0.274);
@@ -77,8 +77,10 @@ body{
     margin-top: 40px;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
 }
 .deckStateWrapper{
+    margin-left: 15%;
     box-sizing: border-box;
     padding: 10px;
     width: 20%;
@@ -133,6 +135,7 @@ body{
 .yourCard{
     width: 20%;
     max-width: 250px;
+    height: auto;
     border: 2px rgba(255, 217, 0, 0.507) solid;
     margin-left: 40px;
 }
@@ -142,4 +145,22 @@ body{
     text-align: center;
     color: red;
     font-size: 25px;
+}
+@media (max-width: 500px) {
+    .cardsSectionWrapper{
+        margin-top: 0px;
+        align-items:center;
+        justify-content: center;
+    }
+    .deckStateWrapper{
+        margin-left: 0px;
+        width: 90%;
+        max-width: 100%;
+    }
+    .cardController{
+        margin: 20px 0;
+    }
+    .yourCard{
+        margin-left: 0 20px;
+    }
 }
